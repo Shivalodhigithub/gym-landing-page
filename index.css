@@ -10,6 +10,8 @@
     height: 100vh;
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px 8%;
     position: relative;
 }
@@ -102,13 +104,22 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 250px;
+    
+    width: 100vw ;
+    margin: auto;
 }
 
 .h3-heading {
     font-family: sans-serif;
     font-size: 27px;
     text-align: center;
+}
+
+.box1 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 60vw;
 }
 
 .box1 ul li {
@@ -175,13 +186,15 @@ nav ul li a:hover {
 }
 
 .form-container {
+    margin: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     display: flex;
     border: 2px solid #1cbac8;
     width: 40%;
-    margin: 56px 484px;
+    margin-bottom: 2em;
+ 
     padding: 22px 45px;
     border-radius: 12px;
 }
@@ -224,4 +237,98 @@ footer {
     width: 3vw;
     cursor: pointer;
     padding: 0px 14px;
+}
+
+/* media query  */
+@media screen and (max-width:768px) {
+    nav ul {
+        margin: 0px 0px;
+    }
+
+    nav ul li {
+        font-size: 20px;
+    }
+
+    .motive {
+        margin: 15em 0px;
+    }
+
+    .btn {
+        width: 20vw;
+        font-size: 10px;
+    }
+
+    .h1-heading {
+        font-size: 2rem;
+    }
+
+    .para-center {
+        text-align: center;
+        padding: 8px 2px;
+    }
+
+    .boxes {
+        width: 26vh;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .box1 {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        width: 60vw;
+    }
+
+    .box1 ul li {
+
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+
+    .offer-box {
+        padding: 33px 17px;
+    }
+
+    .offer-box h3 {
+        font-size: 17px;
+    }
+
+    .offer-box h1 {
+        font-size: 28px;
+    }
+
+    .form-container {
+        margin: auto;
+        width: 90%;
+    }
+
+    .form-container h1 {
+        font-size: 1.6em;
+    }
+
+    .formgroup {
+        width: 43%;
+        font-size: 26px;
+        margin: 7px 21px;
+    }
+
+    .formgroup input {
+        width: 53vw;
+    }
+
+    .formgroup .btn {
+        width: 12vw;
+        border-radius: 9px;
+        margin: 0px 0px;
+    }
+
+    .footer {
+        display: inline;
+    }
+
+    .footer-center {
+        padding: 0px;
+        text-align: center;
+    }
 }
